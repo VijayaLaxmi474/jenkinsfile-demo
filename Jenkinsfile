@@ -4,13 +4,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Building app '
+        echo 'Building app'
       }
     }
-echo 'Building app '
-    stage('List Files') {
+
+    stage('Docker Build') {
       steps {
-        sh 'ls -l'
+        sh 'docker build -t myapp:1.0 .'
       }
     }
 
