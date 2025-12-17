@@ -5,10 +5,9 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building app '
-        echo 'Buliding appp'
       }
     }
-
+echo 'Building app '
     stage('List Files') {
       steps {
         sh 'ls -l'
